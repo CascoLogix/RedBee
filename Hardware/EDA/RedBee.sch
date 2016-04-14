@@ -45,14 +45,15 @@ LIBS:Terminal_Block
 LIBS:Test_Point
 LIBS:TI_Luminary
 LIBS:TI_MSP430
+LIBS:RedBee-cache
 EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "RedBee"
+Title "RedBee by Safecast"
 Date "2016-04-07"
-Rev "1"
+Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -65,9 +66,9 @@ Text GLabel 4700 3975 0    40   Output ~ 0
 RXD_HEADER
 Text GLabel 4700 3875 0    40   Input ~ 0
 TXD_HEADER
-Text GLabel 6250 4175 2    40   Input ~ 0
+Text GLabel 6250 4575 2    40   Input ~ 0
 CTS_HEADER
-Text GLabel 6250 4575 2    40   Output ~ 0
+Text GLabel 6250 4175 2    40   Output ~ 0
 RTS_HEADER
 NoConn ~ 6150 4375
 $Comp
@@ -93,17 +94,6 @@ NoConn ~ 4800 4375
 NoConn ~ 4800 4475
 NoConn ~ 4800 4575
 NoConn ~ 6150 4275
-$Comp
-L HEADER_M_XBEE_PTH P1
-U 1 1 5700D9F3
-P 5450 4225
-F 0 "P1" H 5200 4925 40  0000 C CNN
-F 1 "XBee Pins Footprint" H 5450 3675 40  0000 C CNN
-F 2 "Header:HEADER_XBEE" H 6000 4725 60  0001 C CNN
-F 3 "" H 6000 4725 60  0000 C CNN
-	1    5450 4225
-	1    0    0    -1  
-$EndComp
 $Comp
 L HEADER_F_2.54MM_1R6P_ST_AU_PTH J1
 U 1 1 5700DCFD
@@ -241,6 +231,17 @@ F 1 "VDD" H 4700 3850 40  0000 C CNN
 F 2 "" H 4700 3700 50  0000 C CNN
 F 3 "" H 4700 3700 50  0000 C CNN
 	1    4700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER_M_XBEE_PTH P1
+U 1 1 570C7A5F
+P 5450 4225
+F 0 "P1" H 5200 4925 40  0000 C CNN
+F 1 "HEADER_M_XBEE_PTH" H 5450 3675 40  0000 C CNN
+F 2 "Header:HEADER_XBEE" H 6000 4725 60  0001 C CNN
+F 3 "" H 6000 4725 60  0000 C CNN
+	1    5450 4225
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
